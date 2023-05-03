@@ -145,9 +145,7 @@ export default function(ctx) {
   };
 
   events.keyup = function(event) {
-    if (isKeyModeValid(event.keyCode)) {
-      currentMode.keyup(event);
-    }
+    currentMode.keyup(event);
   };
 
   events.zoomend = function() {
